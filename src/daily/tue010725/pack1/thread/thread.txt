@@ -1,0 +1,3 @@
+newborn runnable running blocked_state kill
+
+run() is override method like toString()
