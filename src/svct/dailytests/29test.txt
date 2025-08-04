@@ -1,0 +1,304 @@
+qeu 5
+Problem Statement: You are working as a logistics engineer in a stone quarry where raw material is extracted and processed into construction-grade stone. The quarry has several stone piles, and each pile contains a certain number of stones, represented by an array fpiles[], where piles[i] indicates the number of stones in the i-th pile.
+
+Due to safety regulations and transportation limitations, you must reduce the overall stone volume across the piles. You ave been authorized to perform exactly k removal operations. In each operation, you can choose any pile and remove ceil(piles[i] / 2) stones from it—meaning you must round up if the pile has an odd number of stones.
+
+You may choose the same pile multiple times over the course of the k operations. Your goal is to strategically plan the sequence of removals to minimize the total number of stones remaining in all piles after performing all k operations.
+
+Design an efficient algorithm that takes in the array piles[] and the integer k, and returns the minimum possible total number of stones remaining after the k operations. Your solution will help optimize load balancing and improve transport efficiency in the quarry operations.
+
+
+Constraints:
+
+1 <= piles.length <= 105105
+
+1 <= piles[i] <= 104104
+
+1 <= k <= 105105
+
+
+Example 1:
+
+Input: piles = [5,4,9], k = 2
+
+Output: 12
+
+Explanation: Steps of a possible scenario are:
+
+- Apply the operation on pile 2. The resulting piles are [5,4,5].
+
+- Apply the operation on pile 0. The resulting piles are [3,4,5].
+
+The total number of stones in [3,4,5] is 12.
+
+
+Example 2:
+
+Input: piles = [4,3,6,7], k = 3
+
+Output: 12
+
+Explanation: Steps of a possible scenario are:
+
+- Apply the operation on pile 2. The resulting piles are [4,3,3,7].
+
+- Apply the operation on pile 3. The resulting piles are [4,3,3,4].
+
+- Apply the operation on pile 0. The resulting piles are [2,3,3,4].
+
+The total number of stones in [2,3,3,4] is 12.
+
+Sample Input 1:
+
+5 4 9 12
+
+2
+
+Sample Output 1:
+
+20
+Problem Statement: You are working as a logistics engineer in a stone quarry where raw material is extracted and processed into construction-grade stone. The quarry has several stone piles, and each pile contains a certain number of stones, represented by an array piles[], where piles[i] indicates the number of stones in the i-th pile.
+
+Due to safety regulations and transportation limitations, you must reduce the overall stone volume across the piles. You have been authorized to perform exactly k removal operations. In each operation, you can choose any pile and remove ceil(piles[i] / 2) stones from it—meaning you must round up if the pile has an odd number of stones.
+
+You may choose the same pile multiple times over the course of the k operations. Your goal is to strategically plan the sequence of removals to minimize the total number of stones remaining in all piles after performing all k operations.
+
+Design an efficient algorithm that takes in the array piles[] and the integer k, and returns the minimum possible total number of stones remaining after the k operations. Your solution will help optimize load balancing and improve transport efficiency in the quarry operations.
+
+
+Constraints:
+
+1 <= piles.length <= 105105
+
+1 <= piles[i] <= 104104
+
+1 <= k <= 105105
+
+
+Example 1:
+
+Input: piles = [5,4,9], k = 2
+
+Output: 12
+
+Explanation: Steps of a possible scenario are:
+
+- Apply the operation on pile 2. The resulting piles are [5,4,5].
+
+- Apply the operation on pile 0. The resulting piles are [3,4,5].
+
+The total number of stones in [3,4,5] is 12.
+
+
+Example 2:
+
+Input: piles = [4,3,6,7], k = 3
+
+Output: 12
+
+Explanation: Steps of a possible scenario are:
+
+- Apply the operation on pile 2. The resulting piles are [4,3,3,7].
+
+- Apply the operation on pile 3. The resulting piles are [4,3,3,4].
+
+- Apply the operation on pile 0. The resulting piles are [2,3,3,4].
+
+The total number of stones in [2,3,3,4] is 12.
+
+Sample Input 1:
+
+5 4 9 12
+
+2
+
+Sample Output 1:
+
+qeu 4
+Problem Statement: You are a developer working for a messaging app that analyzes chat patterns to improve spam detection and user behavior analytics. Your team has observed that users often exhibit repetitive typing behavior when expressing emotions or urgency—such as typing “aaa”, “hhh”, or “zzz”—which are strings made of a single repeated character.
+
+To help identify such patterns, you are tasked with analyzing user messages represented as lowercase alphabetic strings. Specifically, you need to detect the longest special substring—a substring made up of only one repeated character—that appears at least three times in the message.
+
+Write a function that takes a message string as input and returns the length of the longest such special substring. If no special substring occurs at least three times, return -1.
+
+This function will support spam detection algorithms and provide insights into how users express emphasis or emotion in repeated character sequences.
+
+
+Constraints:
+
+3 <= s.length <= 5∗1055∗105
+
+s consists of only lowercase English letters.
+
+
+Example 1:
+
+Input: s = "aaaa"
+
+Output: 2
+
+Explanation: The longest special substring which occurs thrice is "aa": substrings "aaaa", "aaaa", and "aaaa".
+
+It can be shown that the maximum length achievable is 2.
+
+
+Example 2:
+
+Input: s = "abcdef"
+
+Output: -1
+
+Explanation: There exists no special substring which occurs at least thrice. Hence return -1.
+
+
+Example 3:
+
+Input: s = "abcaba"
+
+Output: 1
+
+Explanation: The longest special substring which occurs thrice is "a": substrings "abcaba", "abcaba", and "abcaba".
+
+It can be shown that the maximum length achievable is 1.
+
+Sample Input 1:
+
+aaaabcdef
+
+Sample Output 1:
+
+2
+
+qeu 3
+Problem Statement :
+
+A prime number is a number which is divisible by one and itself. Also a number is called a good prime number if the sum of its digits is a prime number. For example a number 23 is a good prime number because the sum of 2 and 3 ( 2+3=5) is 5 which is a prime number. You are given an integer K. Your task is to find the kth good prime number that is greater than a provided number N.
+
+
+For example , 232 is a good prime number since the sum of all digits is 7 which is a prime number whereas 235 is not a good prime number.
+
+
+Input format :
+
+    The first line contains an integer N.
+    The next line contains an integer K.
+
+
+Output format :
+
+A single integer which is a Kth good prime number that is greater than a provided number N.
+
+
+Constraints :
+
+    1<=N<= 105105
+    1<=K <= 105105
+
+
+Input :
+
+4
+
+4
+
+
+Output :
+
+12
+
+
+Explanation :
+
+Good prime numbers starting from 4 are 5,7,11(1+1=2 which is prime number),12(1+2=3 which is prime number),14(1+4=5 which is a prime number) and so on. Because the sum of digits of an individual number is a prime number And 4 th good prime number is 12 in this series. Hence the output is 12.
+
+Sample Input 1:
+
+17
+
+5
+
+Sample Output 1:
+
+29
+qeu 2
+Problem Statement: Liam is a financial analyst studying a list of investment values over time to identify unusual patterns. His goal is to detect moments when a significant drop follows a peak — indicating potential market anomalies. For his analysis, he defines a reverse pair as two time points (i, j) such that i < j and the value at time i is more than twice the value at time j. This helps him catch sharp declines after high values, which might indicate risky investments.
+
+Given an array nums representing the investment values over time, Liam wants to calculate how many such reverse pairs exist. Each pair must satisfy 0 <= i < j < nums.length and nums[i] > 2 * nums[j]. Your task is to help Liam by writing a program that returns the total number of reverse pairs in the array to help him analyze the market behavior more accurately.
+
+
+Constraints:
+
+1 <= nums.length <= 5 * 104104
+
+-231231 <= nums[i] <= 231231 - 1
+
+
+Example 1:
+
+Input: nums = [1,3,2,3,1]
+
+Output: 2
+
+Explanation: The reverse pairs are:
+
+(1, 4) --> nums[1] = 3, nums[4] = 1, 3 > 2 * 1
+
+(3, 4) --> nums[3] = 3, nums[4] = 1, 3 > 2 * 1
+
+
+
+Example 2:
+
+Input: nums = [2,4,3,5,1]
+
+Output: 3
+
+Explanation: The reverse pairs are:
+
+(1, 4) --> nums[1] = 4, nums[4] = 1, 4 > 2 * 1
+
+(2, 4) --> nums[2] = 3, nums[4] = 1, 3 > 2 * 1
+
+(3, 4) --> nums[3] = 5, nums[4] = 1, 5 > 2 * 1
+
+Sample Input 1:
+
+9 8 3 1
+
+Sample Output 1:
+
+5
+
+	
+qeu 1
+
+Problem Statement :
+
+Given a string s consisting of lowercase English letters, your task is to remove all adjacent duplicate letters from the string. This is achieved by performing a series of duplicate removals, where each removal consists of selecting two adjacent letters that are the same and deleting them from the string. The process is repeated until no further duplicate removals can be made.
+
+Your goal is to write a function that takes a string s as input and returns the final string after all duplicate removals have been made. It can be proven that the resulting string is unique. For example, consider the input string "abbaca". The first duplicate removal deletes the "bb" substring, resulting in the string "aaca". The second removal deletes the "aa" substring, resulting in the string "ca". Since no further duplicate removals can be made, the final result is "ca". Your function should be able to handle input strings of any length and return the resulting string in linear time complexity.
+
+
+Input:
+
+azxxzy
+
+
+Output:
+
+ay
+
+
+ Constraints:
+
+1 <= s.length <= 105
+
+s consists of lowercase English letters.
+
+Sample Input 1:
+
+azxxzy
+
+Sample Output 1:
+
+ay
